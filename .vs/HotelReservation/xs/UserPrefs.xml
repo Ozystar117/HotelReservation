@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{DBDD7961-5FB5-4862-97A1-834BD7BD4FE1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotelReservation/Program.cs">
+    <Files>
+      <File FileName="HotelReservation/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HotelReservation" expanded="True">
+            <Node name="HotelReservation" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HotelReservation FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
