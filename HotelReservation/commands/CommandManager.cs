@@ -74,10 +74,14 @@ namespace HotelReservation.commands
             }
         }
 
-        public void Listen()
+        public void Listen(string testInput = "")
         {
             Console.WriteLine("Enter a command");
-            input = Console.ReadLine().ToLower();
+
+            if (testInput.Length > 0) // if Listen() is called in a test class
+                input = testInput;
+            else
+                input = Console.ReadLine().ToLower();
             foreach(string c in commandDictionary.Keys)
             {
                 if (c.Equals(input))
