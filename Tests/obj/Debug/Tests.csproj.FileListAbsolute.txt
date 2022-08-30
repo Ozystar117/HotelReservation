@@ -1,0 +1,12 @@
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/bin/Debug/Tests.dll
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/bin/Debug/Tests.pdb
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/bin/Debug/HotelReservation.exe
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/bin/Debug/nunit.framework.dll
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/bin/Debug/HotelReservation.pdb
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/bin/Debug/nunit.framework.pdb
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/bin/Debug/nunit.framework.xml
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/obj/Debug/Tests.csproj.AssemblyReference.cache
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/obj/Debug/Tests.csproj.CoreCompileInputs.cache
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/obj/Debug/Tests.csproj.CopyComplete
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/obj/Debug/Tests.dll
+/Users/emmanuelozioma/Projects/HotelReservation/Tests/obj/Debug/Tests.pdb

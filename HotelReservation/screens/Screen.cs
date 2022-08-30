@@ -23,5 +23,9 @@ namespace HotelReservation.screens
             
         }
 
+        public static explicit operator Screen(Type v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

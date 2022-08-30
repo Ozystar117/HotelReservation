@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{DBDD7961-5FB5-4862-97A1-834BD7BD4FE1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotelReservation/StartApp.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/Test.cs">
     <Files>
       <File FileName="HotelReservation/screens/Screen.cs" Line="14" Column="36" />
       <File FileName="HotelReservation/Program.cs" />
-      <File FileName="HotelReservation/StartApp.cs" Line="37" Column="1" />
-      <File FileName="HotelReservation/screens/MenuScreen.cs" />
+      <File FileName="HotelReservation/StartApp.cs" Line="40" Column="1" />
+      <File FileName="HotelReservation/screens/MenuScreen.cs" Line="11" Column="1" />
       <File FileName="HotelReservation/commands/ICommandListener.cs" />
-      <File FileName="HotelReservation/commands/CommandManager.cs" />
+      <File FileName="HotelReservation/commands/CommandManager.cs" Line="1" Column="1" />
       <File FileName="HotelReservation/IApp.cs" />
+      <File FileName="Tests/Test.cs" Line="22" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,9 +17,16 @@
             <Node name="HotelReservation" expanded="True">
               <Node name="commands" expanded="True" />
               <Node name="screens" expanded="True" />
-              <Node name="StartApp.cs" selected="True" />
+            </Node>
+            <Node name="Tests" expanded="True">
+              <Node name="Test.cs" selected="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="HotelReservation" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
