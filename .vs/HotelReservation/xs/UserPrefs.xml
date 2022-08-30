@@ -3,7 +3,7 @@
     <Files>
       <File FileName="HotelReservation/screens/Screen.cs" Line="14" Column="36" />
       <File FileName="HotelReservation/Program.cs" />
-      <File FileName="HotelReservation/StartApp.cs" Line="38" Column="38" />
+      <File FileName="HotelReservation/StartApp.cs" Line="37" Column="1" />
       <File FileName="HotelReservation/screens/MenuScreen.cs" />
       <File FileName="HotelReservation/commands/ICommandListener.cs" />
       <File FileName="HotelReservation/commands/CommandManager.cs" />
