@@ -8,7 +8,7 @@ namespace HotelReservation.commands
     {
         private string input; // user keyboard input
 
-        Dictionary<string, Func<bool>> commandDictionary; // map commands to actions
+        protected Dictionary<string, Func<bool>> commandDictionary; // map commands to actions
 
         Func<bool>[] actionArr = new Func<bool>[26];
 
@@ -17,7 +17,6 @@ namespace HotelReservation.commands
         public CommandManager()
         {
             commandDictionary = new Dictionary<string, Func<bool>>();
-
             PopulateActionList();
             PopulateCommandDictionary();
         }
@@ -29,6 +28,11 @@ namespace HotelReservation.commands
                 if (instance == null) instance = new CommandManager();
                 return instance;
             }
+        }
+
+        public Dictionary<string, Func<bool>> getCommandDictionary()
+        {
+            return commandDictionary;
         }
 
         private void PopulateActionList()
@@ -64,7 +68,7 @@ namespace HotelReservation.commands
             #endregion
         }
 
-        private void PopulateCommandDictionary()
+        public void PopulateCommandDictionary()
         {
             int i = 0;
             for(char c = 'a'; c <= 'z'; c++)
@@ -74,7 +78,7 @@ namespace HotelReservation.commands
             }
         }
 
-        public void Listen(string testInput = "")
+        public Func<bool> Listen(string testInput = "")
         {
             Console.WriteLine("Enter a command");
 
@@ -91,61 +95,63 @@ namespace HotelReservation.commands
                     action();
                 }
             }
+            Console.WriteLine("re: " + (CommandManager.Instance.A == commandDictionary[input]));
+            return commandDictionary[input];
         }
 
-        public bool A()
+        public virtual bool A()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
-        public bool B()
+        public virtual bool B()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
-        public bool C()
+        public virtual bool C()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool D()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool E()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool F()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool G()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool H()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool I()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool J()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool K()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public virtual bool L()
@@ -155,22 +161,22 @@ namespace HotelReservation.commands
 
         public bool M()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool N()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool O()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool P()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool Q()
@@ -181,47 +187,47 @@ namespace HotelReservation.commands
 
         public bool R()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool S()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool T()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool U()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool V()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool W()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool X()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool Y()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public bool Z()
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }

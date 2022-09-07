@@ -1,6 +1,10 @@
 ﻿using System;
 namespace HotelReservation.commands
 {
+    /// <summary>
+    /// bool is used because Func<TResult> must return smth:
+    /// this is useful in the CommandManager class
+    /// </summary>
     public interface ICommandListener
     {
         bool A();

@@ -5,10 +5,8 @@ namespace HotelReservation.screens
 {
     public class MenuScreen : Screen
     {
-
         public MenuScreen()
         {
-
         }
 
         public override void Update()

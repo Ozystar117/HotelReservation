@@ -8,7 +8,6 @@ namespace HotelReservation.screens
     {
         public Screen()
         {
-
         }
 
         public virtual void Update()
