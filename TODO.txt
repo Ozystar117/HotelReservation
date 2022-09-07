@@ -1,0 +1,6 @@
+﻿>> MINOR FIXES
+
+> Ensure that the application does not break when the user enters an unrecognized command.
+> Password-format authentication. (6 digit, 1 uppercase, 1 number).
+
+>> CREATE AN ACCOUNT

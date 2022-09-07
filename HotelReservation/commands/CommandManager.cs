@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using HotelReservation;
 
 namespace HotelReservation.commands
 {
@@ -95,7 +94,6 @@ namespace HotelReservation.commands
                     action();
                 }
             }
-            Console.WriteLine("re: " + (CommandManager.Instance.A == commandDictionary[input]));
             return commandDictionary[input];
         }
 
