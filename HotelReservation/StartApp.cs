@@ -24,6 +24,11 @@ namespace HotelReservation
             }
         }
 
+        public Stack<Screen> GetScreenManager()
+        {
+            return screenManager;
+        }
+
         public void Start()
         {
             Update(); 

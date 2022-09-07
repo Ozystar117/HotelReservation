@@ -1,4 +1,5 @@
 ﻿using System;
+using HotelReservation.screens;
 using System.Collections.Generic;
 using HotelReservation.utility;
 
@@ -48,9 +49,9 @@ namespace HotelReservation.screens
                 string password = Console.ReadLine();
             }
 
-            // Validate User Details
+            // TODO: Validate User Details
 
-            // TODO: Navigator.NavigateReplace(startScreen)
+            Navigator.Instance.NavigateReplace(new HomeScreen());
         }
 
         public void Register()

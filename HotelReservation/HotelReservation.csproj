@@ -39,6 +39,8 @@
     <Compile Include="commands\CommandManager.cs" />
     <Compile Include="IApp.cs" />
     <Compile Include="utility\Authenticator.cs" />
+    <Compile Include="utility\Navigator.cs" />
+    <Compile Include="screens\HomeScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="screens\" />
