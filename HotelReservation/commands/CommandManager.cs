@@ -85,6 +85,7 @@ namespace HotelReservation.commands
                 input = testInput;
             else
                 input = Console.ReadLine().ToLower();
+
             foreach(string c in commandDictionary.Keys)
             {
                 if (c.Equals(input))
@@ -92,9 +93,14 @@ namespace HotelReservation.commands
                     // perform relevant action
                     Func<bool> action = commandDictionary[input];
                     action();
+                    return commandDictionary[input]; // return the reference to the action performed
                 }
             }
-            return commandDictionary[input];
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Error: Unrecognized Command");
+            Console.WriteLine("------------------------------");
+
+            return null; // Unrecognized command
         }
 
         public virtual bool A()
@@ -180,10 +186,13 @@ namespace HotelReservation.commands
         public bool Q()
         {
             StartApp.ISRUNNING = false;
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("Application quit successfully");
+            Console.WriteLine("----------------------------------");
             return true;
         }
 
-        public bool R()
+        public virtual bool R()
         {
             return true;
         }

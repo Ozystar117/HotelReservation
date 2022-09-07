@@ -39,6 +39,10 @@ namespace Tests
 
         #endregion
 
+        /// <summary>
+        /// Test that the correct the action is performed when the user enters a command
+        /// </summary>
+        /// <param name="input"></param>
         #region Test cases for listen for command are equal
         [TestCase("a")]
         [TestCase("b")]
@@ -69,8 +73,8 @@ namespace Tests
         #endregion
         public void TestListenForCommand_AreEqual(string input)
         {
-            Dictionary<string, Func<bool>> cd = CommandManager.Instance.getCommandDictionary();
-            Func<bool> actual = CommandManager.Instance.Listen(input);
+            Dictionary<string, Func<bool>> cd = commandManager.getCommandDictionary();
+            Func<bool> actual = commandManager.Listen(input);
             Assert.AreEqual(cd[input], actual);
         }
 

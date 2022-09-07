@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using HotelReservation.utility;
 
 namespace HotelReservation.screens
 {
@@ -33,7 +34,26 @@ namespace HotelReservation.screens
             Console.WriteLine("-----------------------------------------");
         }
 
-        public void Login()
+        public void Login(string uName="", string pwd="")
+        {
+            if(uName.Length <= 0)
+            {
+                Console.WriteLine("> Enter username");
+                string username = Console.ReadLine();
+            }
+
+            if(pwd.Length <= 0)
+            {
+                Console.WriteLine("> Enter password");
+                string password = Console.ReadLine();
+            }
+
+            // Validate User Details
+
+            // TODO: Navigator.NavigateReplace(startScreen)
+        }
+
+        public void Register()
         {
             Console.WriteLine("> Enter username");
             string username = Console.ReadLine();
@@ -41,19 +61,25 @@ namespace HotelReservation.screens
             Console.WriteLine("> Enter password");
             string password = Console.ReadLine();
 
-            //TODO: Validate Input Format
+            bool isValid = Authenticator.Instance.VerifyPasswordFormat(password, 6);
 
-            // Validate User Details
-        }
+            if (isValid)
+            {
+                // TODO: Save the user's details to the database
 
-        public void Register()
-        {
-            // TODO: Allow users to register
+                Login(username, password); // login the user
+            }
         }
 
         public override bool L()
         {
             Login();
+            return true;
+        }
+
+        public override bool R()
+        {
+            Register();
             return true;
         }
         

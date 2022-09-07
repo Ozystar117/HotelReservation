@@ -38,10 +38,12 @@
     <Compile Include="commands\ICommandListener.cs" />
     <Compile Include="commands\CommandManager.cs" />
     <Compile Include="IApp.cs" />
+    <Compile Include="utility\Authenticator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="screens\" />
     <Folder Include="commands\" />
+    <Folder Include="utility\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

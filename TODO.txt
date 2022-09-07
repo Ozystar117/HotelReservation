@@ -1,6 +1,12 @@
-﻿>> MINOR FIXES
+﻿>> MINOR FIXES{
+    # Ensure that the application does not break when the user enters an unrecognized command.....DONE (07/09/2022)
+    # Password-format authentication. (6 digit, 1 uppercase, 1 number)............................DONE (07/09/2022)
+}
 
-> Ensure that the application does not break when the user enters an unrecognized command.
-> Password-format authentication. (6 digit, 1 uppercase, 1 number).
+>> MORE FIXES{
+    # Write a Utility class for navigation called Navigator with functions such as Navigate() and NavigateReplace()......... (07/09/2022, )
+}
 
->> CREATE AN ACCOUNT
+>> CREATE AN ACCOUNT{
+    
+}
