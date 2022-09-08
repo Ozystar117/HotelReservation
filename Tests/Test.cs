@@ -34,7 +34,7 @@ namespace Tests
         private static readonly object[] ApplicationRunningTestCases =
          {
             new object[]{ new MenuScreen(), },
-            new object[]{ new MenuScreen(), },
+            new object[]{ new HomeScreen(), },
         };
 
         #endregion
