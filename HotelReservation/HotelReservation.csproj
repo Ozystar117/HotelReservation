@@ -41,11 +41,13 @@
     <Compile Include="utility\Authenticator.cs" />
     <Compile Include="utility\Navigator.cs" />
     <Compile Include="screens\HomeScreen.cs" />
+    <Compile Include="hotel\Hotel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="screens\" />
     <Folder Include="commands\" />
     <Folder Include="utility\" />
+    <Folder Include="hotel\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

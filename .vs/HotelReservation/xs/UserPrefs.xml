@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{DBDD7961-5FB5-4862-97A1-834BD7BD4FE1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotelReservation/screens/MenuScreen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotelReservation/hotel/Hotel.cs">
     <Files>
       <File FileName="HotelReservation/screens/Screen.cs" Line="14" Column="10" />
       <File FileName="HotelReservation/Program.cs" />
@@ -11,8 +11,9 @@
       <File FileName="TODO.txt" Line="8" Column="2" />
       <File FileName="HotelReservation/utility/Authenticator.cs" Line="39" Column="1" />
       <File FileName="HotelReservation/utility/Navigator.cs" Line="53" Column="1" />
-      <File FileName="HotelReservation/screens/MenuScreen.cs" Line="84" Column="10" />
-      <File FileName="HotelReservation/screens/HomeScreen.cs" Line="7" Column="10" />
+      <File FileName="HotelReservation/screens/MenuScreen.cs" Line="40" Column="57" />
+      <File FileName="HotelReservation/screens/HomeScreen.cs" Line="11" Column="44" />
+      <File FileName="HotelReservation/hotel/Hotel.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,9 +22,10 @@
             <Node name="Solution Items" expanded="True" />
             <Node name="HotelReservation" expanded="True">
               <Node name="commands" expanded="True" />
-              <Node name="screens" expanded="True">
-                <Node name="MenuScreen.cs" selected="True" />
+              <Node name="hotel" expanded="True">
+                <Node name="Hotel.cs" selected="True" />
               </Node>
+              <Node name="screens" expanded="True" />
               <Node name="utility" expanded="True" />
             </Node>
             <Node name="Tests" expanded="True" />

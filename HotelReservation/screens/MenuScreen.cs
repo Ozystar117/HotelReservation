@@ -35,6 +35,12 @@ namespace HotelReservation.screens
             Console.WriteLine("-----------------------------------------");
         }
 
+        /// <summary>
+        /// Login the user
+        /// Navigate to the home screen after successful login
+        /// </summary>
+        /// <param name="uName"></param>
+        /// <param name="pwd"></param>
         public void Login(string uName="", string pwd="")
         {
             if(uName.Length <= 0)
@@ -54,6 +60,11 @@ namespace HotelReservation.screens
             Navigator.Instance.NavigateReplace(new HomeScreen());
         }
 
+        /// <summary>
+        /// Enable users to create an account
+        /// The format of the password is verified
+        /// Ensure that users are automatically logged in after successfully creating an account
+        /// </summary>
         public void Register()
         {
             Console.WriteLine("> Enter username");
@@ -62,7 +73,7 @@ namespace HotelReservation.screens
             Console.WriteLine("> Enter password");
             string password = Console.ReadLine();
 
-            bool isValid = Authenticator.Instance.VerifyPasswordFormat(password, 6);
+            bool isValid = Authenticator.Instance.VerifyPasswordFormat(password, 6); // verify that the format of the password supplied is correct
 
             if (isValid)
             {
