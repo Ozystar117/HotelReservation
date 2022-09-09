@@ -42,12 +42,20 @@
     <Compile Include="utility\Navigator.cs" />
     <Compile Include="screens\HomeScreen.cs" />
     <Compile Include="hotel\Hotel.cs" />
+    <Compile Include="user\User.cs" />
+    <Compile Include="utility\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="screens\" />
     <Folder Include="commands\" />
     <Folder Include="utility\" />
     <Folder Include="hotel\" />
+    <Folder Include="data\" />
+    <Folder Include="user\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\all_users.txt" />
+    <None Include="data\all_reservations.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
