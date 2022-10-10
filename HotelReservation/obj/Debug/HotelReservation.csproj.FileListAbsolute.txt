@@ -1,6 +1,1 @@
-/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/bin/Debug/HotelReservation.exe
-/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/bin/Debug/HotelReservation.pdb
-/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/obj/Debug/HotelReservation.csproj.AssemblyReference.cache
 /Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/obj/Debug/HotelReservation.csproj.CoreCompileInputs.cache
-/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/obj/Debug/HotelReservation.exe
-/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/obj/Debug/HotelReservation.pdb
