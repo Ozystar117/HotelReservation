@@ -178,7 +178,7 @@ namespace HotelReservation.commands
             return true;
         }
 
-        public bool P()
+        public virtual bool P()
         {
             return true;
         }

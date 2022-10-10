@@ -7,22 +7,14 @@ namespace HotelReservation.screens
 {
     public class MenuScreen : Screen
     {
-        List<User> allUsers;
-        string allUsersFilePath;
+        //List<User> allUsers;
+        //string allUsersFilePath;
 
         public MenuScreen()
         {
-            allUsersFilePath = "/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/data/all_users.txt";
+            //allUsersFilePath = "/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/data/all_users.txt";
             // allUsers = Util.Instance.FetchAllUsers();
-            allUsers =  DatabaseUtil.Instance.FetchAllUsers(allUsersFilePath);
-        }
-
-        public void PrintAllUsersDetails() // for testing (delete later)
-        {
-            foreach(User user in allUsers)
-            {
-                user.PrintDetails();
-            }
+            //allUsers =  DatabaseUtility.Instance.FetchAllUsers(allUsersFilePath);
         }
 
         public override void Update()
@@ -57,31 +49,29 @@ namespace HotelReservation.screens
         /// <param name="pwd"></param>
         public void Login(User user = null)
         {
-            string username = "";
-            string password = "";
 
             if(user == null)
             {
                 Console.WriteLine("> Enter username");
-                username = Console.ReadLine();
+                string username = Console.ReadLine();
             
                 Console.WriteLine("> Enter password");
-                password = Console.ReadLine();
+                string password = Console.ReadLine();
 
                 user = new User(username, password);
             }
 
-            
-            // TODO: Validate User Details
-
-            foreach(User u in allUsers)
+            foreach(User u in DatabaseUtility.allUsers)
             {
                 if(user.GetUserName() == u.GetUserName() && user.GetPassword() == u.GetPassword())
                 {
                     Console.WriteLine("-----------------------------------");
                     Console.WriteLine("Logged in successfully");
                     Console.WriteLine("-----------------------------------");
-                    Navigator.Instance.NavigateReplace(new HomeScreen());
+
+                    DatabaseUtility.loggedInUser = user; // update the ref to the logged in user
+
+                    Navigator.Instance.Navigate(new HomeScreen());
                     return;
                 }
             }
@@ -113,10 +103,14 @@ namespace HotelReservation.screens
                 // TODO: Save the user's details to the database
 
                 User user = new User(username, password);
-                if (DatabaseUtil.Instance.UpdateAllUsersFile(user))
+                if (DatabaseUtility.Instance.UpdateAllUsersFile(user))
                 {
-                    allUsers.Add(user);
+                    DatabaseUtility.allUsers.Add(user);
                     Login(user); // login the user
+                }
+                else
+                {
+                    Console.WriteLine("Error registering");
                 }
             }
         }
@@ -135,7 +129,7 @@ namespace HotelReservation.screens
 
         public override bool H()
         {
-            PrintAllUsersDetails();
+            DatabaseUtility.Instance.PrintAllUsersDetails();
             return base.H();
         }
 
