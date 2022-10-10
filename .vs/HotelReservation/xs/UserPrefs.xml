@@ -8,7 +8,7 @@
       <File FileName="HotelReservation/IApp.cs" />
       <File FileName="Tests/Test.cs" />
       <File FileName="HotelReservation/commands/CommandManager.cs" />
-      <File FileName="TODO.txt" Line="7" Column="129" />
+      <File FileName="TODO.txt" />
       <File FileName="HotelReservation/utility/Authenticator.cs" />
       <File FileName="HotelReservation/utility/Navigator.cs" />
       <File FileName="HotelReservation/screens/MenuScreen.cs" Line="1" Column="1" />
@@ -27,11 +27,11 @@
               <Node name="commands" expanded="True" />
               <Node name="data" expanded="True" />
               <Node name="hotel" expanded="True" />
-              <Node name="screens" expanded="True">
-                <Node name="MenuScreen.cs" selected="True" />
-              </Node>
+              <Node name="screens" expanded="True" />
               <Node name="user" expanded="True" />
-              <Node name="utility" expanded="True" />
+              <Node name="utility" expanded="True">
+                <Node name="Util.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="Tests" expanded="True" />
           </Node>
