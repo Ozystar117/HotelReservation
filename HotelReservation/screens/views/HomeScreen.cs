@@ -8,12 +8,14 @@ namespace HotelReservation.screens.views
 {
     public class HomeScreen : Screen
     {
-
-        //private LinkedList<Reservation> reservationList; // list of all reservations made by the logged in user
-
         public HomeScreen(HomeScreenViewModel homeScreenViewModel)
         {
+            // READ THE TODO.TXT
             _screenViewModel = homeScreenViewModel;
+        }
+
+        public HomeScreen()
+        {
         }
 
         public override void Update()

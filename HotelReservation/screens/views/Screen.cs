@@ -6,7 +6,7 @@ using HotelReservation.screens.view_models;
 
 namespace HotelReservation.screens.views
 {
-    public class Screen : CommandManager, IView
+    public class Screen : IView
     {
         protected ScreenViewModel _screenViewModel;
 

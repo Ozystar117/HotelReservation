@@ -34,7 +34,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartApp.cs" />
     <Compile Include="commands\ICommandListener.cs" />
-    <Compile Include="commands\CommandManager.cs" />
     <Compile Include="IView.cs" />
     <Compile Include="utility\Authenticator.cs" />
     <Compile Include="utility\Navigator.cs" />

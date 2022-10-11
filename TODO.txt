@@ -8,7 +8,7 @@
 }
 
 >> REFACTOR{
-    # Convert to MVVM{
+    # Convert to MVVM{............................................................................DONE (11/10/2022, 11/10/2022)
         Functionalities should be in the view models
         A base Screen view model class should implement the ICommandManager
         A view model should be created for each screen    

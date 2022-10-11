@@ -8,15 +8,11 @@ namespace HotelReservation.screens.views
 {
     public class MenuScreen : Screen
     {
-        //List<User> allUsers;
-        //string allUsersFilePath;
 
         public MenuScreen()
         {
+            // READ THE TODO.TXT
             _screenViewModel = new MenuScreenViewModel();
-            //allUsersFilePath = "/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/data/all_users.txt";
-            // allUsers = Util.Instance.FetchAllUsers();
-            //allUsers =  DatabaseUtility.Instance.FetchAllUsers(allUsersFilePath);
         }
 
         public override void Update()
