@@ -8,6 +8,7 @@ namespace HotelReservation.screens.views
 {
     public class Screen : IView
     {
+        // Change To Controller
         protected ScreenViewModel _screenViewModel;
 
         public Screen()
