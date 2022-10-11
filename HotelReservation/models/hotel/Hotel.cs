@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HotelReservation.hotel
+namespace HotelReservation.models.hotel
 {
     public class Hotel
     {

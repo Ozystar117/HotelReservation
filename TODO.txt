@@ -7,6 +7,11 @@
     # Write a Utility class for navigation called Navigator with functions such as Navigate() and NavigateReplace().........DONE (07/09/2022, 08/09/2022)
 }
 
->> CREATE AN ACCOUNT{
+>> REFACTOR{
+    # Convert to MVVM{
+        Functionalities should be in the view models
+        A base Screen view model class should implement the ICommandManager
+        A view model should be created for each screen    
+    }
     
 }

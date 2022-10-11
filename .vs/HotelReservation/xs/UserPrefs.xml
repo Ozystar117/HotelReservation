@@ -1,26 +1,25 @@
 ﻿<Properties StartupConfiguration="{DBDD7961-5FB5-4862-97A1-834BD7BD4FE1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotelReservation/utility/DatabaseUtility.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotelReservation/screens/view_models/MenuScreenViewModel.cs">
     <Files>
-      <File FileName="HotelReservation/screens/Screen.cs" Line="22" Column="13" />
+      <File FileName="HotelReservation/screens/Screen.cs" Line="11" Column="51" />
       <File FileName="HotelReservation/Program.cs" />
-      <File FileName="HotelReservation/StartApp.cs" />
-      <File FileName="HotelReservation/commands/ICommandListener.cs" />
-      <File FileName="HotelReservation/IApp.cs" />
+      <File FileName="HotelReservation/StartApp.cs" Line="43" Column="31" />
+      <File FileName="HotelReservation/commands/ICommandListener.cs" Line="8" Column="22" />
+      <File FileName="HotelReservation/IApp.cs" Line="4" Column="27" />
       <File FileName="Tests/Test.cs" />
-<<<<<<< HEAD
-      <File FileName="HotelReservation/commands/CommandManager.cs" />
-=======
-      <File FileName="HotelReservation/commands/CommandManager.cs" Line="87" Column="1" />
->>>>>>> login
-      <File FileName="TODO.txt" />
+      <File FileName="HotelReservation/commands/CommandManager.cs" Line="6" Column="39" />
+      <File FileName="TODO.txt" Line="18" Column="1" />
       <File FileName="HotelReservation/utility/Authenticator.cs" />
-      <File FileName="HotelReservation/utility/Navigator.cs" Line="1" Column="1" />
-      <File FileName="HotelReservation/screens/MenuScreen.cs" Line="75" Column="28" />
-      <File FileName="HotelReservation/screens/HomeScreen.cs" />
-      <File FileName="HotelReservation/hotel/Hotel.cs" />
+      <File FileName="HotelReservation/utility/Navigator.cs" Line="14" Column="50" />
+      <File FileName="HotelReservation/screens/MenuScreen.cs" Line="78" Column="14" />
+      <File FileName="HotelReservation/screens/HomeScreen.cs" Line="16" Column="29" />
+      <File FileName="HotelReservation/hotel/Hotel.cs" Line="21" Column="31" />
       <File FileName="HotelReservation/data/all_reservations.txt" />
-      <File FileName="HotelReservation/user/User.cs" />
-      <File FileName="HotelReservation/utility/DatabaseUtility.cs" Line="78" Column="48" />
+      <File FileName="HotelReservation/user/User.cs" Line="2" Column="35" />
+      <File FileName="HotelReservation/utility/DatabaseUtility.cs" Line="11" Column="48" />
+      <File FileName="HotelReservation/screens/view_models/HomeScreenViewModel.cs" Line="9" Column="55" />
+      <File FileName="HotelReservation/screens/view_models/ScreenViewModel.cs" Line="227" Column="10" />
+      <File FileName="HotelReservation/screens/view_models/MenuScreenViewModel.cs" Line="6" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,16 +29,17 @@
             <Node name="HotelReservation" expanded="True">
               <Node name="commands" expanded="True" />
               <Node name="data" expanded="True" />
-              <Node name="hotel" expanded="True" />
-              <Node name="screens" expanded="True" />
-              <Node name="user" expanded="True" />
-              <Node name="utility" expanded="True">
-<<<<<<< HEAD
-                <Node name="Util.cs" selected="True" />
-=======
-                <Node name="DatabaseUtility.cs" selected="True" />
->>>>>>> login
+              <Node name="models" expanded="True">
+                <Node name="hotel" expanded="True" />
+                <Node name="user" expanded="True" />
               </Node>
+              <Node name="screens" expanded="True">
+                <Node name="view_models" expanded="True">
+                  <Node name="MenuScreenViewModel.cs" selected="True" />
+                </Node>
+                <Node name="views" expanded="True" />
+              </Node>
+              <Node name="utility" expanded="True" />
             </Node>
             <Node name="Tests" expanded="True" />
           </Node>

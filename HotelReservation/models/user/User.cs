@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HotelReservation.user
+namespace HotelReservation.models.user
 {
     public class User
     {

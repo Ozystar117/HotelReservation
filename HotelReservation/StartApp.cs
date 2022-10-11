@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using HotelReservation.screens;
+using HotelReservation.screens.views;
 
 namespace HotelReservation
 {
-    public class StartApp : IApp
+    public class StartApp : IView
     {
         public static bool ISRUNNING = true; // used to update the application loop
         private Stack<Screen> screenManager = new Stack<Screen>(); // handle screen management

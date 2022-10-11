@@ -32,26 +32,33 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="screens\Screen.cs" />
     <Compile Include="StartApp.cs" />
-    <Compile Include="screens\MenuScreen.cs" />
     <Compile Include="commands\ICommandListener.cs" />
     <Compile Include="commands\CommandManager.cs" />
-    <Compile Include="IApp.cs" />
+    <Compile Include="IView.cs" />
     <Compile Include="utility\Authenticator.cs" />
     <Compile Include="utility\Navigator.cs" />
-    <Compile Include="screens\HomeScreen.cs" />
-    <Compile Include="hotel\Hotel.cs" />
-    <Compile Include="user\User.cs" />
     <Compile Include="utility\DatabaseUtility.cs" />
+    <Compile Include="screens\views\HomeScreen.cs" />
+    <Compile Include="screens\views\MenuScreen.cs" />
+    <Compile Include="screens\views\Screen.cs" />
+    <Compile Include="models\user\User.cs" />
+    <Compile Include="screens\view_models\HomeScreenViewModel.cs" />
+    <Compile Include="models\hotel\Hotel.cs" />
+    <Compile Include="screens\view_models\ScreenViewModel.cs" />
+    <Compile Include="screens\view_models\MenuScreenViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="screens\" />
     <Folder Include="commands\" />
     <Folder Include="utility\" />
-    <Folder Include="hotel\" />
     <Folder Include="data\" />
-    <Folder Include="user\" />
+    <Folder Include="screens\views\" />
+    <Folder Include="screens\view_models\" />
+    <Folder Include="screens\models\" />
+    <Folder Include="models\" />
+    <Folder Include="models\user\" />
+    <Folder Include="models\hotel\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\all_users.txt" />

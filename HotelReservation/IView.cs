@@ -1,7 +1,7 @@
 ﻿using System;
 namespace HotelReservation
 {
-    public interface IApp
+    public interface IView
     {
         void Update();
         void Render();

@@ -1,44 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using HotelReservation.models.user;
+using HotelReservation.screens.views;
 using HotelReservation.utility;
-using HotelReservation.user;
 
-namespace HotelReservation.screens
+namespace HotelReservation.screens.view_models
 {
-    public class MenuScreen : Screen
+    public class MenuScreenViewModel : ScreenViewModel
     {
-        //List<User> allUsers;
-        //string allUsersFilePath;
 
-        public MenuScreen()
+        public MenuScreenViewModel()
         {
-            //allUsersFilePath = "/Users/emmanuelozioma/Projects/HotelReservation/HotelReservation/data/all_users.txt";
-            // allUsers = Util.Instance.FetchAllUsers();
-            //allUsers =  DatabaseUtility.Instance.FetchAllUsers(allUsersFilePath);
-        }
-
-        public override void Update()
-        {
-            base.Update();
-        }
-
-        public override void Render()
-        {
-            Console.WriteLine("-----------------------------------------");
-            Console.WriteLine("-            LOGIN / REGISTER           -");
-            Console.WriteLine("-                                       -");                                                                                                                                                                                                                                                                                                                                                                                         
-            Console.WriteLine("-                                       -");
-            Console.WriteLine("-                                       -");
-            Console.WriteLine("-            Press L to Login           -");
-            Console.WriteLine("-                                       -");
-            Console.WriteLine("-                                       -");
-            Console.WriteLine("-           Press R to Register         -");
-            Console.WriteLine("-                                       -");
-            Console.WriteLine("-                                       -");
-            Console.WriteLine("-             Press Q to Quit           -");
-            Console.WriteLine("-                                       -");
-            Console.WriteLine("-                                       -");
-            Console.WriteLine("-----------------------------------------");
         }
 
         /// <summary>
@@ -50,20 +22,20 @@ namespace HotelReservation.screens
         public void Login(User user = null)
         {
 
-            if(user == null)
+            if (user == null)
             {
                 Console.WriteLine("> Enter username");
                 string username = Console.ReadLine();
-            
+
                 Console.WriteLine("> Enter password");
                 string password = Console.ReadLine();
 
                 user = new User(username, password);
             }
 
-            foreach(User u in DatabaseUtility.allUsers)
+            foreach (User u in DatabaseUtility.allUsers)
             {
-                if(user.GetUserName() == u.GetUserName() && user.GetPassword() == u.GetPassword())
+                if (user.GetUserName() == u.GetUserName() && user.GetPassword() == u.GetPassword())
                 {
                     Console.WriteLine("-----------------------------------");
                     Console.WriteLine("Logged in successfully");
@@ -71,7 +43,7 @@ namespace HotelReservation.screens
 
                     DatabaseUtility.loggedInUser = user; // update the ref to the logged in user
 
-                    Navigator.Instance.Navigate(new HomeScreen());
+                    Navigator.Instance.Navigate(new HomeScreen(new HomeScreenViewModel()));
                     return;
                 }
             }
@@ -132,6 +104,5 @@ namespace HotelReservation.screens
             DatabaseUtility.Instance.PrintAllUsersDetails();
             return base.H();
         }
-
     }
 }

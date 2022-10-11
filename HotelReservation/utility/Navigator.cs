@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using HotelReservation.screens;
+using HotelReservation.screens.views;
 
 namespace HotelReservation.utility
 {
