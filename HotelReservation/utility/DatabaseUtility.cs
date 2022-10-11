@@ -18,7 +18,6 @@ namespace HotelReservation.utility
 
         public DatabaseUtility()
         {
-            loggedInUser = null;
         }
 
         public static DatabaseUtility Instance
