@@ -43,7 +43,7 @@
     <Compile Include="screens\HomeScreen.cs" />
     <Compile Include="hotel\Hotel.cs" />
     <Compile Include="user\User.cs" />
-    <Compile Include="utility\Util.cs" />
+    <Compile Include="utility\DatabaseUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="screens\" />

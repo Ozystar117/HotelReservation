@@ -1,22 +1,26 @@
 ﻿<Properties StartupConfiguration="{DBDD7961-5FB5-4862-97A1-834BD7BD4FE1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotelReservation/screens/MenuScreen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotelReservation/utility/DatabaseUtility.cs">
     <Files>
-      <File FileName="HotelReservation/screens/Screen.cs" Line="14" Column="10" />
+      <File FileName="HotelReservation/screens/Screen.cs" Line="22" Column="13" />
       <File FileName="HotelReservation/Program.cs" />
       <File FileName="HotelReservation/StartApp.cs" />
       <File FileName="HotelReservation/commands/ICommandListener.cs" />
       <File FileName="HotelReservation/IApp.cs" />
       <File FileName="Tests/Test.cs" />
+<<<<<<< HEAD
       <File FileName="HotelReservation/commands/CommandManager.cs" />
+=======
+      <File FileName="HotelReservation/commands/CommandManager.cs" Line="87" Column="1" />
+>>>>>>> login
       <File FileName="TODO.txt" />
       <File FileName="HotelReservation/utility/Authenticator.cs" />
-      <File FileName="HotelReservation/utility/Navigator.cs" />
-      <File FileName="HotelReservation/screens/MenuScreen.cs" Line="1" Column="1" />
+      <File FileName="HotelReservation/utility/Navigator.cs" Line="1" Column="1" />
+      <File FileName="HotelReservation/screens/MenuScreen.cs" Line="75" Column="28" />
       <File FileName="HotelReservation/screens/HomeScreen.cs" />
       <File FileName="HotelReservation/hotel/Hotel.cs" />
-      <File FileName="HotelReservation/data/all_users.txt" />
       <File FileName="HotelReservation/data/all_reservations.txt" />
       <File FileName="HotelReservation/user/User.cs" />
+      <File FileName="HotelReservation/utility/DatabaseUtility.cs" Line="78" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,7 +34,11 @@
               <Node name="screens" expanded="True" />
               <Node name="user" expanded="True" />
               <Node name="utility" expanded="True">
+<<<<<<< HEAD
                 <Node name="Util.cs" selected="True" />
+=======
+                <Node name="DatabaseUtility.cs" selected="True" />
+>>>>>>> login
               </Node>
             </Node>
             <Node name="Tests" expanded="True" />
